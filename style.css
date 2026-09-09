@@ -2,3 +2,13 @@
     margin: 0px;
     padding: 0px;
 }
+
+body{
+    font-family: monospace;
+    background-color: rgb(13, 20, 85);
+    color: rgb(255, 255, 255);
+}
+
+hr{
+    border: 1px solid red; /*Muda a cor da linha e as configurações da mesma*/
+}
