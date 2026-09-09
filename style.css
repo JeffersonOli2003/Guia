@@ -5,10 +5,34 @@
 
 body{
     font-family: monospace;
-    background-color: rgb(13, 20, 85);
+    background-color: #0a2270; /*12,20,85*/
     color: rgb(255, 255, 255);
 }
 
 hr{
-    border: 1px solid red; /*Muda a cor da linha e as configurações da mesma*/
+    border: 1px solid #ffffff; /*Muda a cor da linha e as configurações da mesma*/
+}
+
+.grupoComandos{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+}
+.cartaoComando{
+    width: calc(12.5% - 15px);
+    border: 1px solid #002fff;
+    border-radius: 20px;
+    padding: 10px 5px;
+    transition: 150ms;
+    background-color: rgb(2, 39, 247);
+}
+
+.cartaoComando:hover{
+    background-color: #00155c;
+    color: #ffffff;
+    scale: 102.5%;
+}
+
+.title{
+    color: #d40101;
 }
