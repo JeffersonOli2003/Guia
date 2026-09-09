@@ -31,6 +31,7 @@ hr{
     background-color: #00155c;
     color: #ffffff;
     scale: 102.5%;
+    transform:translateY(-5%)
 }
 
 .title{
