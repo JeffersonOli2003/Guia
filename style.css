@@ -13,13 +13,23 @@ hr{
     border: 1px solid #ffffff; /*Muda a cor da linha e as configurações da mesma*/
 }
 
-.grupoComandos{
+.linhasCartoes{ /*grupo de cima (git init)*/
     display: flex;
     justify-content: space-between;
     margin-inline: 10px;
+    flex-direction:  row;
+    flex-wrap: wrap;
+}
+
+.linhasCartoes1{ /*grupo de baixo (git status)*/
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+    flex-direction:  row;
+    flex-wrap: wrap;
 }
 .cartaoComando{
-    width: calc(12.5% - 15px);
+    width: calc(24% - 10px);
     border: 1px solid #002fff;
     border-radius: 20px;
     padding: 10px 5px;
