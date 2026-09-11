@@ -7,6 +7,7 @@ body{
     font-family: monospace;
     background-color: #0a2270; /*12,20,85*/
     color: rgb(255, 255, 255);
+    font-size: large;
 }
 
 header{
@@ -73,4 +74,10 @@ hr{
 
 .titulo{
     text-align: center;
+}
+
+.grupoComandos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
