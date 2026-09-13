@@ -21,17 +21,13 @@ main{
     margin-block: auto;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 200px;
 }
 
 footer{
     height: 5vh;
 }
 
-hr{
-    border: 1px solid #ffffff; /*Muda a cor da linha e as configurações da mesma*/
-    margin-top: 50px;
-}
 
 .linhasCartoes{ /*grupo de cima (git init)*/
     display: flex;
@@ -41,6 +37,7 @@ hr{
     flex-wrap: wrap;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-inline: 50px;
+    margin-top: 1000px;
 }
 
 .linhasCartoes1{ /*grupo de baixo (git status)*/
@@ -51,9 +48,20 @@ hr{
     flex-wrap: wrap;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.linhasCartoes2{ /*grupo de baixo (git status)*/
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 2px;
+    flex-direction:  row;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+}
+
 .cartaoComando{
     width: calc(24% - 10px);
-    border: 1px solid #002fff;
+    border: 1px solid #000000;
     border-radius: 20px;
     padding: 10px 5px;
     transition: 150ms;
@@ -80,4 +88,52 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+hr{ /*COMANDO DA LINHA E O TEXTO AQUI*/
+    border: 1px solid #ffffff; /*Muda a cor da linha e as configurações da mesma*/
+    margin-top: 1500px; /*Desce a linha e o que esta escrito junto a ela*/
+}
+
+.parGit{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.tilGit{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.ferTra{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.botao { /* DAQUI PARA BAIXO É APENAS O BOTAO DE FERRRAMENTAS DE TRABALHO*/
+    display: block; /* Faz o botão ocupar quase toda a largura do card */
+    width: 90%;
+    padding: 15px; /* Espaçamento interno: aumenta a altura do botão */
+    margin: 200px; /* Centraliza o botão dentro do card */
+    background-color: #0057ff; /* Cor do fundo do botão */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    font-size: 20px;/* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 10px; /* Arredonda as bordas */
+    margin-left: 290px;
+}
+
+/* Efeito quando passar o mouse */
+.botao:hover {
+    background-color: #003bb5;
+    transform: scale(1.02);
+}
+
+.til{
+    margin-left: 500px;
 }
