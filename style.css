@@ -1,26 +1,250 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-.grupoComandos{
+body {
+    background-color: #102b78;
+    font-family: monospace;
+    color: white;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #e60000;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+main h2 {
+    color: red;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+
+/* GRUPO DOS COMANDOS */
+
+.grupoComandos {
+    width: 100%;
+    padding: 0px 50px 40px;
+}
+
+
+/* LINHA DOS CARTÕES */
+
+.linhascartoes {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px 14px;
 }
-.cartaoComando{
-    border: 1px solid rgb(255, 0, 0);
+
+
+/* CARTÃO */
+
+.cartaoComando {
+    border: 1px solid #102df0;
     border-radius: 20px;
-    width: 85vw;
-    height: 20vh;
+
+    width: 100%;
+    min-height: 270px;
+
+    padding: 12px 7px;
+
+    background-color: #102df0;
+
+    color: white;
+
+    transition: 150ms;
+
+    display: flex;
+    flex-direction: column;
 }
+
+
+/* TÍTULO DO CARTÃO */
+
+.cartaoTitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 8px;
+}
+
+.cartaoTitulo h3 {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+
+/* ÍCONES */
+
+.icons {
+    width: 30px;
+    height: 30px;
+
+    fill: white;
+    stroke: black;
+    stroke-width: 5px;
+
+    flex-shrink: 0;
+}
+
+
+/* TEXTO DOS CARTÕES */
+
+.cartaoComando p {
+    color: white;
+
+    font-size: 18px;
+    line-height: 1.35;
+
+    margin-top: 3px;
+}
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    color: white;
+    font-family: monospace;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+footer p {
+    font-size: 15px;
+    padding: 8px 0px;
+}
+
+
+
+/* TELAS A PARTIR DE 768px */
+/* 2 CARTÕES POR LINHA */
+
 @media screen and (min-width: 768px) {
-    .grupoComandos {
-        flex-direction:row;
+
+    .linhascartoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cartaoComando {
+        width: calc(50% - 7px);
+    }
+
+    .icons {
+        width: 40px;
+        height: 40px;
     }
 }
-.cartaoComando{
-    border: 1px solid rgb(255, 0, 0);
-    border-radius: 20px;
-    width: calc(50% - 10px);
+
+
+
+/* TELAS A PARTIR DE 992px */
+/* 4 CARTÕES POR LINHA */
+
+@media screen and (min-width: 992px) {
+
+    .grupoComandos {
+        padding: 0px 50px 40px;
+    }
+
+    .cartaoComando {
+        width: calc(25% - 11px);
+    }
+
+    .cartaoComando:hover {
+        scale: 1.05;
+
+        box-shadow: 1px 1px 1px 1px #756454;
+
+        transform: translateY(-5%);
+    }
+}
+
+
+/* TELAS GRANDES: DAQUI PARA BAIXO */
+
+
+@media screen and (min-width: 1280px) {
+
+    .linhascartoes {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* CELULAR: DAQUI PARA BAIXO*/
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 55px;
+    }
+
+    .titulo {
+        font-size: 25px;
+    }
+
+    main h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .grupoComandos {
+        padding: 0px 15px 25px;
+    }
+
+    .linhascartoes {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cartaoComando {
+        width: 100%;
+        min-height: auto;
+        padding: 15px;
+    }
+
+    .cartaoTitulo h3 {
+        font-size: 20px;
+    }
+
+    .cartaoComando p {
+        font-size: 17px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
 }
