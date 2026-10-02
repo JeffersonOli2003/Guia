@@ -174,16 +174,18 @@ hr {
     font-weight: bold;
     text-decoration: none;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .botao:hover {
     background-color: #003bb5;
-    transform: scale(1.02);
+    scale: 105%;
 }
 
 .til {
     margin-left: 0;
 }
+
 
 
 /* ========================= */
