@@ -4,9 +4,40 @@
     box-sizing: border-box;
 }
 
+/*CORPO DO SITE */
+#simples{
+     background-color: rgba(0, 0, 0, 0);
+     color: #FFFFFF;
+     margin-left: 5px;
+     margin-inline: 2px;
+     margin-top: -15px;
+     border: none;
+     transition: 1.0s;
+     scale: 150%;
+
+}
+#simples:hover{
+    scale: 200%;
+    background-color: #ffffff00;
+
+}
+
+.modoEscuro{
+/* Cor de fundo da página */
+    background-color: #0026ff;
+    /* Cor padrão dos textos */
+    color: #FFFFFF;
+}
+
+.modoClaro{
+/* Cor de fundo da página */
+    background-color: #0d1853;
+    /* Cor padrão dos textos */
+    color: #FFFFFF;
+}
+
 body {
     font-family: monospace;
-    background-color: #0a2270;
     color: white;
     font-size: large;
     overflow-x: hidden;
@@ -70,7 +101,7 @@ footer {
     border-radius: 20px;
     padding: 15px;
     transition: 150ms;
-    background-color: rgb(2, 39, 247);
+    background-color: rgb(38, 65, 218);
 }
 
 .cartaoComando:hover {
@@ -85,7 +116,7 @@ footer {
 /* TÍTULOS */
 
 .title {
-    color: #d40101;
+    color: #ffffff;
 }
 
 .titulo {
